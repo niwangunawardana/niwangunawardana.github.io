@@ -1614,3 +1614,74 @@ footer {
   }
 
 }
+/* ---------- SRS / CARS SETUP PHOTOS ---------- */
+
+.srs-cars-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 380px));
+  gap: 28px;
+  justify-content: center;
+  margin: 30px 0 35px;
+}
+
+
+.srs-cars-photo {
+  margin: 0;
+
+  background: var(--bg-card);
+
+  border:
+    1px solid rgba(148, 163, 184, 0.16);
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+
+.srs-cars-photo img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+.srs-cars-photo figcaption {
+  padding: 12px 15px;
+
+  color: var(--text-muted);
+
+  font-size: 0.85rem;
+
+  line-height: 1.45;
+}
+
+
+.srs-cars-work-summary {
+  max-width: 850px;
+  margin-top: 25px;
+}
+
+
+.srs-cars-work-summary p {
+  margin-bottom: 18px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+
+@media (max-width: 850px) {
+
+  .srs-cars-photo-grid {
+    grid-template-columns: minmax(0, 420px);
+  }
+
+}
