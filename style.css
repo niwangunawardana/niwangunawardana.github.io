@@ -1314,3 +1314,60 @@ footer {
 
   line-height: 1.5;
 }
+/* ---------- OPTICAL EVOLUTION ---------- */
+
+.optical-evolution-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(0, 0.9fr);
+
+  gap: 50px;
+
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+
+.optical-evolution-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 520px;
+
+  height: auto;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+
+.optical-evolution-text p {
+  margin-bottom: 20px;
+
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+/* Stack on mobile */
+
+@media (max-width: 750px) {
+
+  .optical-evolution-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .optical-evolution-image img {
+    margin: 0 auto;
+  }
+
+}
