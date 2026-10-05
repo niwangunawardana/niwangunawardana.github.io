@@ -1269,3 +1269,48 @@ footer {
   }
 
 }
+/* ---------- PROJECT FIGURES ---------- */
+
+.project-visual-section {
+  padding: 55px 25px;
+}
+
+
+.project-main-figure {
+  max-width: 900px;
+  margin: auto;
+
+  background: var(--bg-card);
+
+  border:
+    1px solid rgba(148, 163, 184, 0.16);
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.project-main-figure img {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+}
+
+
+.project-main-figure figcaption {
+  padding: 15px 20px;
+
+  color: var(--text-muted);
+
+  text-align: center;
+
+  font-size: 0.88rem;
+
+  line-height: 1.6;
+}
