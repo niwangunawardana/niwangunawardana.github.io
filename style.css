@@ -1766,15 +1766,15 @@ footer {
 
 }
 /* =========================================================
-   CONTACT FORM
+   CONTACT SECTION
 ========================================================= */
 
 .contact-section {
   background:
     radial-gradient(
-      circle at 15% 25%,
-      rgba(56, 189, 248, 0.05),
-      transparent 30%
+      circle at 15% 30%,
+      rgba(56, 189, 248, 0.06),
+      transparent 32%
     ),
     linear-gradient(
       180deg,
@@ -1788,14 +1788,274 @@ footer {
   display: grid;
 
   grid-template-columns:
-    minmax(0, 0.95fr)
-    minmax(0, 1.05fr);
+    minmax(0, 0.8fr)
+    minmax(0, 1.2fr);
 
-  gap: 28px;
+  gap: 30px;
 
   max-width: 1050px;
 
   margin: 0 auto;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.contact-info-card,
+.contact-form-card {
+  padding: 34px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16, 24, 39, 0.96),
+      rgba(13, 21, 35, 0.96)
+    );
+
+  border:
+    1px solid rgba(148, 163, 184, 0.16);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.28);
+}
+
+
+.contact-info-card h3,
+.contact-form-card h3 {
+  margin-bottom: 12px;
+
+  color: #ffffff;
+
+  font-size: 1.35rem;
+}
+
+
+.contact-info-card > p,
+.contact-form-intro {
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+
+  margin-bottom: 28px;
+}
+
+
+/* ---------- EMAIL BOX ---------- */
+
+.contact-email-box {
+  margin-top: 28px;
+
+  padding: 20px;
+
+  background:
+    rgba(56, 189, 248, 0.06);
+
+  border:
+    1px solid rgba(56, 189, 248, 0.22);
+
+  border-radius: 12px;
+}
+
+
+.contact-email-box span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: var(--text-muted);
+
+  font-size: 0.88rem;
+
+  font-weight: 600;
+}
+
+
+.contact-email-box a {
+  color: var(--accent-light);
+
+  text-decoration: none;
+
+  font-size: 1.02rem;
+
+  font-weight: 600;
+}
+
+
+.contact-email-box a:hover {
+  color: #ffffff;
+}
+
+
+/* ---------- FORM ---------- */
+
+.contact-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+.form-row {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+
+.form-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.form-field label {
+  color: var(--text-secondary);
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+}
+
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  color: var(--text-main);
+
+  background:
+    rgba(3, 7, 18, 0.62);
+
+  border:
+    1px solid rgba(148, 163, 184, 0.20);
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 0.95rem;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #66758b;
+}
+
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color:
+    rgba(56, 189, 248, 0.7);
+
+  background:
+    rgba(3, 7, 18, 0.8);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(56, 189, 248, 0.08);
+}
+
+
+.form-field textarea {
+  min-height: 160px;
+
+  resize: vertical;
+}
+
+
+/* ---------- SEND BUTTON ---------- */
+
+.contact-submit {
+  align-self: flex-start;
+
+  margin-top: 4px;
+
+  padding: 12px 22px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent),
+      #60a5fa
+    );
+
+  color: #020617;
+
+  font-family: inherit;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.contact-submit:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(56, 189, 248, 0.25);
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 800px) {
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 24px;
+  }
+
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+
+  .contact-submit {
+    width: 100%;
+  }
+
 }
 
 
