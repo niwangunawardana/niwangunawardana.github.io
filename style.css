@@ -933,3 +933,24 @@ footer {
   }
 
 }
+/* ---------- PROJECT LINKS ---------- */
+
+.project-link {
+  display: inline-block;
+  margin-top: 18px;
+
+  color: var(--accent);
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-light);
+  transform: translateX(4px);
+}
