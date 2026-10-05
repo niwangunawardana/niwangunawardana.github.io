@@ -29,7 +29,45 @@ img {
 
 
 /* ---------- NAVIGATION ---------- */
+/* ===== PROFILE PHOTO FINAL FIX ===== */
 
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container .profile-photo {
+  width: 260px !important;
+  height: 320px !important;
+
+  max-width: 260px !important;
+
+  object-fit: cover;
+  object-position: 72% center;
+
+  border-radius: 18px;
+
+  border: 6px solid white;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.18);
+
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+  .profile-container .profile-photo {
+    width: 220px !important;
+    height: 270px !important;
+    max-width: 220px !important;
+  }
+
+}
 nav {
   background: #0f172a;
   position: sticky;
