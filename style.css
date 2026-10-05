@@ -1433,3 +1433,61 @@ footer {
   }
 
 }
+/* ---------- AEROSOL CONCENTRATION RESULT ---------- */
+
+.aerosol-result-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(0, 0.9fr);
+
+  gap: 50px;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+
+.aerosol-result-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 520px;
+
+  height: auto;
+
+  margin: 0 auto;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+
+.aerosol-result-text {
+  width: 100%;
+}
+
+
+.aerosol-result-text p {
+  margin-bottom: 20px;
+
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+@media (max-width: 750px) {
+
+  .aerosol-result-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+}
