@@ -1,0 +1,291 @@
+/* ================================
+   Niwan Gunawardana
+   Academic Research Portfolio
+   ================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.nav-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 16px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc, #eaf2ff);
+}
+
+.hero-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 70px 25px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.3rem;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+.hero h2 {
+  font-size: 1.35rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  color: #475569;
+  margin-bottom: 28px;
+}
+
+/* Temporary profile placeholder */
+
+.profile-placeholder {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: #dbeafe;
+  border: 8px solid white;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #1d4ed8;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-secondary {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  background: white;
+}
+
+.btn-secondary:hover {
+  background: #eff6ff;
+}
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+section {
+  padding: 80px 25px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+  color: #0f172a;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #64748b;
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about-text {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+/* ---------- RESEARCH CARDS ---------- */
+
+.research {
+  background: #f8fafc;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+.card h3 {
+  color: #1d4ed8;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #64748b;
+}
+
+/* ---------- SOCIAL LINKS ---------- */
+
+.social-links {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.social-links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 850px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons,
+  .social-links {
+    justify-content: center;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 0.85rem;
+  }
+
+  .profile-placeholder {
+    width: 220px;
+    height: 220px;
+  }
+}
