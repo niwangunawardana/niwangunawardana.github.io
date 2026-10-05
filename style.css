@@ -1558,3 +1558,69 @@ footer {
   width: 100%;
   max-width: 760px;
 }
+/* ---------- O-PTIR / RAMAN SETUP PHOTOS ---------- */
+
+.optir-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin: 30px 0 35px;
+}
+
+.optir-photo {
+  margin: 0;
+
+  background: var(--bg-card);
+
+  border:
+    1px solid rgba(148, 163, 184, 0.16);
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.optir-photo img {
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+}
+
+.optir-photo figcaption {
+  padding: 14px 18px;
+
+  color: var(--text-muted);
+
+  font-size: 0.88rem;
+
+  line-height: 1.5;
+}
+
+.optir-work-summary {
+  max-width: 850px;
+
+  margin-top: 25px;
+}
+
+.optir-work-summary p {
+  margin-bottom: 18px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+@media (max-width: 750px) {
+
+  .optir-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
