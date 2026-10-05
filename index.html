@@ -820,9 +820,28 @@
     <div class="contact-grid">
 
 
-      <!-- ===============================
-           CONTACT INFORMATION
-      ================================ -->
+      <!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section id="contact" class="contact-section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Contact
+    </h2>
+
+    <p class="section-subtitle">
+      Feel free to get in touch regarding research,
+      collaboration, teaching, or professional opportunities.
+    </p>
+
+
+    <div class="contact-grid">
+
+
+      <!-- CONTACT INFO -->
 
       <div class="contact-info-card">
 
@@ -830,17 +849,16 @@
           Get in Touch
         </h3>
 
-        <p class="contact-intro">
-          Feel free to contact me directly or send a message
-          using the form.
+        <p>
+          I am always happy to connect regarding research,
+          academic collaboration, scientific projects, or
+          professional opportunities.
         </p>
 
 
-        <div class="contact-detail">
+        <div class="contact-email-box">
 
-          <span class="contact-label">
-            Email
-          </span>
+          <span>Email</span>
 
           <a href="mailto:ngniwan470@gmail.com">
             ngniwan470@gmail.com
@@ -848,74 +866,11 @@
 
         </div>
 
-
-        <div class="contact-detail">
-
-          <span class="contact-label">
-            Research Interests
-          </span>
-
-          <p>
-            Physical &amp; Analytical Chemistry<br>
-            Spectroscopy &amp; Chemical Imaging<br>
-            Photophysics &amp; Nanomaterials<br>
-            Optical Instrumentation
-          </p>
-
-        </div>
-
-
-        <div class="contact-detail">
-
-          <span class="contact-label">
-            Professional Profiles
-          </span>
-
-          <div class="contact-social-links">
-
-            <a
-              href="https://www.linkedin.com/in/niwan-gunawardana-phd"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-
-            <a
-              href="https://scholar.google.com/citations?user=_1IBv9AAAAAJ"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Scholar
-            </a>
-
-            <a
-              href="https://orcid.org/0009-0002-7367-0948"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ORCID
-            </a>
-
-            <a
-              href="https://github.com/niwangunawardana"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-
-          </div>
-
-        </div>
-
       </div>
 
 
 
-      <!-- ===============================
-           MESSAGE FORM
-      ================================ -->
+      <!-- CONTACT FORM -->
 
       <div class="contact-form-card">
 
@@ -923,13 +878,13 @@
           Send a Message
         </h3>
 
-        <p class="contact-intro">
+        <p class="contact-form-intro">
           Your message will be sent directly to my email.
         </p>
 
 
         <form
-          action="https://formspree.io/f/xppqzndq"
+          action="https://formspree.io/f/YOUR_FORM_ID"
           method="POST"
           class="contact-form"
         >
@@ -937,15 +892,16 @@
 
           <div class="form-row">
 
+
             <div class="form-field">
 
-              <label for="contact-name">
+              <label for="name">
                 Name
               </label>
 
               <input
                 type="text"
-                id="contact-name"
+                id="name"
                 name="name"
                 placeholder="Your name"
                 required
@@ -956,13 +912,13 @@
 
             <div class="form-field">
 
-              <label for="contact-email">
+              <label for="email">
                 Email
               </label>
 
               <input
                 type="email"
-                id="contact-email"
+                id="email"
                 name="email"
                 placeholder="you@email.com"
                 required
@@ -970,20 +926,21 @@
 
             </div>
 
+
           </div>
 
 
           <div class="form-field">
 
-            <label for="contact-subject">
+            <label for="subject">
               Subject
             </label>
 
             <input
               type="text"
-              id="contact-subject"
+              id="subject"
               name="subject"
-              placeholder="Subject"
+              placeholder="What would you like to discuss?"
               required
             >
 
@@ -992,15 +949,15 @@
 
           <div class="form-field">
 
-            <label for="contact-message">
+            <label for="message">
               Message
             </label>
 
             <textarea
-              id="contact-message"
+              id="message"
               name="message"
-              rows="7"
-              placeholder="Write your message..."
+              rows="6"
+              placeholder="Write your message here..."
               required
             ></textarea>
 
