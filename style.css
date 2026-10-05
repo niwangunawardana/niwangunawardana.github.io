@@ -1491,3 +1491,55 @@ footer {
   }
 
 }
+/* ---------- DOUBLE PEROVSKITE MECHANISM ---------- */
+
+.perovskite-mechanism-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(0, 0.85fr);
+
+  gap: 50px;
+
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+
+.perovskite-mechanism-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 560px;
+
+  height: auto;
+
+  margin: 0 auto;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+
+.perovskite-mechanism-text p {
+  margin-bottom: 20px;
+
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+@media (max-width: 750px) {
+
+  .perovskite-mechanism-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+}
