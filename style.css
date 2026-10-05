@@ -1562,10 +1562,12 @@ footer {
 
 .optir-photo-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 380px));
   gap: 28px;
+  justify-content: center;
   margin: 30px 0 35px;
 }
+
 
 .optir-photo {
   margin: 0;
@@ -1583,44 +1585,32 @@ footer {
     0 12px 30px rgba(0, 0, 0, 0.28);
 }
 
+
 .optir-photo img {
   display: block;
 
   width: 100%;
-
-  aspect-ratio: 4 / 3;
+  height: 260px;
 
   object-fit: cover;
 }
 
+
 .optir-photo figcaption {
-  padding: 14px 18px;
+  padding: 12px 15px;
 
   color: var(--text-muted);
 
-  font-size: 0.88rem;
+  font-size: 0.85rem;
 
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-.optir-work-summary {
-  max-width: 850px;
 
-  margin-top: 25px;
-}
-
-.optir-work-summary p {
-  margin-bottom: 18px;
-
-  color: var(--text-secondary);
-
-  line-height: 1.8;
-}
-
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 
   .optir-photo-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 420px);
   }
 
 }
