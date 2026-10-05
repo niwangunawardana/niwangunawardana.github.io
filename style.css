@@ -1371,3 +1371,12 @@ footer {
   }
 
 }
+/* Reduce spacing around Optical Evolution */
+
+.optical-evolution-grid {
+  margin-bottom: 0;
+}
+
+.project-content:has(.optical-evolution-grid) {
+  padding-bottom: 40px;
+}
