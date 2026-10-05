@@ -954,3 +954,318 @@ footer {
   color: var(--accent-light);
   transform: translateX(4px);
 }
+/* =========================================================
+   DETAILED PROJECT PAGES
+========================================================= */
+
+
+/* ---------- PROJECT CARD LINK ---------- */
+
+.project-link {
+  display: inline-block;
+  margin-top: 18px;
+
+  color: var(--accent);
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-light);
+  transform: translateX(4px);
+}
+
+
+/* ---------- PROJECT HERO ---------- */
+
+.project-hero {
+  padding: 95px 25px 70px;
+
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(56, 189, 248, 0.11),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #070b14,
+      #0a1220
+    );
+
+  border-bottom:
+    1px solid rgba(148, 163, 184, 0.1);
+}
+
+
+.project-hero .container {
+  max-width: 950px;
+}
+
+
+.project-back {
+  display: inline-block;
+
+  margin-bottom: 30px;
+
+  color: var(--accent);
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+
+.project-back:hover {
+  color: var(--accent-light);
+
+  transform: translateX(-4px);
+}
+
+
+.project-category {
+  margin-bottom: 14px;
+
+  color: var(--accent);
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+.project-hero h1 {
+  max-width: 850px;
+
+  margin-bottom: 22px;
+
+  color: #ffffff;
+
+  font-size: 3rem;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.5px;
+}
+
+
+.project-intro {
+  max-width: 800px;
+
+  color: var(--text-secondary);
+
+  font-size: 1.12rem;
+
+  line-height: 1.8;
+}
+
+
+/* ---------- PROJECT STATISTICS ---------- */
+
+.project-stats {
+  max-width: 950px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+.stat {
+  padding: 28px 20px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #101827,
+      #0d1523
+    );
+
+  border:
+    1px solid rgba(148, 163, 184, 0.16);
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+
+.stat-number {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--accent-light);
+
+  font-size: 1.65rem;
+
+  font-weight: 700;
+}
+
+
+.stat-label {
+  color: var(--text-secondary);
+
+  font-size: 0.93rem;
+}
+
+
+/* ---------- PROJECT CONTENT ---------- */
+
+.project-content {
+  max-width: 900px;
+}
+
+
+.project-content h2 {
+  margin-bottom: 25px;
+
+  color: #ffffff;
+
+  font-size: 2rem;
+}
+
+
+.project-content h2::after {
+  content: "";
+
+  display: block;
+
+  width: 45px;
+
+  height: 3px;
+
+  margin-top: 10px;
+
+  border-radius: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--accent),
+      #2563eb
+    );
+}
+
+
+.project-content p {
+  margin-bottom: 18px;
+
+  color: var(--text-secondary);
+
+  font-size: 1.03rem;
+
+  line-height: 1.8;
+}
+
+
+/* ---------- KEY FINDINGS ---------- */
+
+.project-findings {
+  padding-left: 22px;
+
+  color: var(--text-secondary);
+}
+
+
+.project-findings li {
+  margin-bottom: 13px;
+
+  padding-left: 5px;
+}
+
+
+.project-findings li::marker {
+  color: var(--accent);
+}
+
+
+/* ---------- TECHNIQUE TAGS ---------- */
+
+.tech-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+
+.tech-tags span {
+  padding: 8px 15px;
+
+  color: var(--accent-light);
+
+  background:
+    rgba(56, 189, 248, 0.08);
+
+  border:
+    1px solid rgba(56, 189, 248, 0.25);
+
+  border-radius: 20px;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+}
+
+
+/* ---------- PROJECT PAGE TABLET ---------- */
+
+@media (max-width: 800px) {
+
+  .project-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .project-stats {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ---------- PROJECT PAGE MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+  .project-hero {
+    padding:
+      65px 20px
+      50px;
+  }
+
+  .project-hero h1 {
+    font-size: 2rem;
+  }
+
+  .project-intro {
+    font-size: 1rem;
+  }
+
+  .project-content h2 {
+    font-size: 1.7rem;
+  }
+
+}
