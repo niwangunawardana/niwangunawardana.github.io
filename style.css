@@ -1543,3 +1543,18 @@ footer {
   }
 
 }
+/* ---------- ENLARGE PEROVSKITE MECHANISM FIGURE ---------- */
+
+.perovskite-mechanism-grid {
+  grid-template-columns:
+    minmax(0, 1.45fr)
+    minmax(0, 0.75fr);
+
+  gap: 45px;
+}
+
+
+.perovskite-mechanism-image img {
+  width: 100%;
+  max-width: 700px;
+}
