@@ -803,87 +803,219 @@
      CONTACT
 ================================================== -->
 
-<section id="contact">
+<section id="contact" class="contact-section">
 
   <div class="container">
-
 
     <h2 class="section-title">
       Contact
     </h2>
 
-
     <p class="section-subtitle">
-
-      Research collaboration •
-      Academic opportunities •
-      Industrial R&amp;D •
-      Scientific communication
-
+      Get in touch regarding research, academic collaboration,
+      teaching, or professional opportunities.
     </p>
 
 
-
-    <div class="about-text">
-
-
-      <p>
-
-        Please feel free to contact me regarding research,
-        academic collaboration, teaching, scientific communication,
-        industrial R&amp;D, or professional opportunities.
-
-      </p>
+    <div class="contact-grid">
 
 
+      <!-- ===============================
+           CONTACT INFORMATION
+      ================================ -->
 
-      <div class="social-links">
+      <div class="contact-info-card">
+
+        <h3>
+          Get in Touch
+        </h3>
+
+        <p class="contact-intro">
+          Feel free to contact me directly or send a message
+          using the form.
+        </p>
 
 
-        <a
-          href="https://www.linkedin.com/in/niwan-gunawardana-phd"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div class="contact-detail">
+
+          <span class="contact-label">
+            Email
+          </span>
+
+          <a href="mailto:ngniwan470@gmail.com">
+            ngniwan470@gmail.com
+          </a>
+
+        </div>
+
+
+        <div class="contact-detail">
+
+          <span class="contact-label">
+            Research Interests
+          </span>
+
+          <p>
+            Physical &amp; Analytical Chemistry<br>
+            Spectroscopy &amp; Chemical Imaging<br>
+            Photophysics &amp; Nanomaterials<br>
+            Optical Instrumentation
+          </p>
+
+        </div>
+
+
+        <div class="contact-detail">
+
+          <span class="contact-label">
+            Professional Profiles
+          </span>
+
+          <div class="contact-social-links">
+
+            <a
+              href="https://www.linkedin.com/in/niwan-gunawardana-phd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://scholar.google.com/citations?user=_1IBv9AAAAAJ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Scholar
+            </a>
+
+            <a
+              href="https://orcid.org/0009-0002-7367-0948"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ORCID
+            </a>
+
+            <a
+              href="https://github.com/niwangunawardana"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ===============================
+           MESSAGE FORM
+      ================================ -->
+
+      <div class="contact-form-card">
+
+        <h3>
+          Send a Message
+        </h3>
+
+        <p class="contact-intro">
+          Your message will be sent directly to my email.
+        </p>
+
+
+        <form
+          action="https://formspree.io/f/xppqzndq"
+          method="POST"
+          class="contact-form"
         >
-          LinkedIn
-        </a>
 
 
-        <a
-          href="https://scholar.google.com/citations?user=_1IBv9AAAAAJ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Scholar
-        </a>
+          <div class="form-row">
+
+            <div class="form-field">
+
+              <label for="contact-name">
+                Name
+              </label>
+
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your name"
+                required
+              >
+
+            </div>
 
 
-        <a
-          href="https://orcid.org/0009-0002-7367-0948"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ORCID
-        </a>
+            <div class="form-field">
+
+              <label for="contact-email">
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="you@email.com"
+                required
+              >
+
+            </div>
+
+          </div>
 
 
-        <a
-          href="https://github.com/niwangunawardana"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+          <div class="form-field">
+
+            <label for="contact-subject">
+              Subject
+            </label>
+
+            <input
+              type="text"
+              id="contact-subject"
+              name="subject"
+              placeholder="Subject"
+              required
+            >
+
+          </div>
 
 
-        <a
-          href="https://www.facebook.com/share/1BkgyBaWy9/?mibextid=wwXIfr"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Facebook
-        </a>
+          <div class="form-field">
 
+            <label for="contact-message">
+              Message
+            </label>
+
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="7"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="contact-submit"
+          >
+            Send Message
+          </button>
+
+
+        </form>
 
       </div>
 
